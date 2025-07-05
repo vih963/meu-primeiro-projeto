@@ -1,5 +1,6 @@
 import express from 'express'
-import { PrismaClient } from '@prisma/client'
+import { Prisma } from '@prisma/client'
+import { PrismaClient } from './prisma/generated/clientPg'
 
 const prisma = new PrismaClient()
 const rotas = express.Router()
